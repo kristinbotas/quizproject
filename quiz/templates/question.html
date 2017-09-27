@@ -9,13 +9,10 @@
 		<link rel="stylesheet" href="/static/quizstyle.css">
 	</head>
 	<body>
-		<h1>Vilken är din favoritfärg av dessa tre slumpvalda färger?</h1>
-		<form action="/action_page.php">
-			<input type="radio" name="favourite" value="Röd" checked> Röd<br>
-			<input type="radio" name="favourite" value="Blå"> Blå<br>
-			<input type="radio" namne="favourite" value="Grön"> Grön<br>
-			<input type="submit" value="Nästa">
-		</form>	
+		<h1>{{ question_number }}. {{ question }}</h1>
+		<p>{{ answer1 }}</p>
+		<p>{{ answer2 }}</p>
+		<p>{{ answer3 }}</p>
 		<script 
 	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
 	</script>
