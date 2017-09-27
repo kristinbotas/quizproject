@@ -11,11 +11,13 @@
 	<body>
 		<h1>Ankeborg Schmankeborg! Vad kan du egentligen?</h1>
 		<p> Kristin Botås ger dig din kroppsvikt i guldpengar om du gör ett av de här quizzen!</p>
+		<ul>
 		{% for quiz in quizzes %}
 				<p><a href="{% url 'quiz_page' quiz.quiz_number %}">
 					{{ quiz.name }}
 			</a></p>
-		{% endfor %}		
+		{% endfor %}	
+		</ul>	
 		<script 
 	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
 	</script>
