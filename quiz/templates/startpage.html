@@ -16,6 +16,8 @@
 				<p><a href="{% url 'quiz_page' quiz.quiz_number %}">
 					{{ quiz.name }}
 			</a></p>
+		{% empty %}	
+			<p><em>Det finns inga frågesporter ännu.</em></p>
 		{% endfor %}	
 		</ul>	
 		<script 
