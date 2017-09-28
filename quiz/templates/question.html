@@ -9,6 +9,13 @@
 		<link rel="stylesheet" href="/static/quizstyle.css">
 	</head>
 	<body>
+		<form action="{% url "answer_page" quiz.quiz_number question_number %}" method="post">
+			{% csrf_token %}
+			<input type="radio" name="answer" value="1" {{ answer1 }} checked>
+			<input type="radio" name="answer" value="2" {{ answer1 }}>
+			<button type="submit">Nästa</button>
+		</form>
+
 		<h1>{{ question_number }}. {{ question }}</h1>
 		<p>{{ answer1 }}</p>
 		<p>{{ answer2 }}</p>
