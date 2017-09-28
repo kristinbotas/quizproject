@@ -9,20 +9,13 @@
 		<link rel="stylesheet" href="/static/quizstyle.css">
 	</head>
 	<body>
+		<h1>{{ question_number }}. {{ question }}</h1>
 		<form action="{% url "answer_page" quiz.quiz_number question_number %}" method="post">
 			{% csrf_token %}
-			<input type="radio" name="answer" value="1" {{ answer1 }} checked>
-			<input type="radio" name="answer" value="2" {{ answer1 }}>
+			<input type="radio" name="answer" value="1" checked> {{ answer1 }} <br>
+			<input type="radio" name="answer" value="2"> {{ answer2 }} <br>
 			<button type="submit">Nästa</button>
-		</form>
-
-		<h1>{{ question_number }}. {{ question }}</h1>
-		<p>{{ answer1 }}</p>
-		<p>{{ answer2 }}</p>
-		<p>{{ answer3 }}</p>
-		<p><a href="{% url 'completed_page' quiz_number %}">
-			Nästa
-		</a></p>	
+		</form>	
 		<script 
 	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
 	</script>
