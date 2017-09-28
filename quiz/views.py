@@ -9,7 +9,7 @@ def startpage(request):
 
 def quiz(request, quiz_number):
 		context = {
-				"quiz": quizzes[quiz_number - 1],
+				"quiz": Quiz.objects.get(quiz_number=quiz_number),
 				"quiz_number": quiz_number,
 		}
 		return render(request, "quiz.html", context)
