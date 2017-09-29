@@ -9,11 +9,18 @@
 		<link rel="stylesheet" href="/static/quizstyle.css">
 	</head>
 	<body class=background1>
-		<h1>{{ quiz.name }}</h1>
-		<p>{{ quiz.description }}</p>
-		<p><a href="{% url 'question_page' quiz_number 1 %}">
+		<div class="container">
+		<div class="row">	
+			<div class="col-md-3"> </div>
+			<div class="col-md-6">	
+			<h1>{{ quiz.name }}</h1>
+			<p>{{ quiz.description }}</p>
+			<p><a href="{% url 'question_page' quiz_number 1 %}">
 			Starta
-		</a></p>		
+		</a></p>
+		</div>
+			<div class="col-md-3"> </div>
+				
 		<script 
 	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
 	</script>
