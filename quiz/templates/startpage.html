@@ -16,7 +16,7 @@
 			<div class="col-md-6">
 			<img src="/static/images/apa.gif/">	
 			{% for quiz in quizzes %}
-					<p><a href="{% url 'quiz_page' quiz.quiz_number %}">
+					<p><a href="{% url 'question_page' 1 1 %}">
 						{{ quiz.name }}
 				</a></p>
 			{% empty %}	
