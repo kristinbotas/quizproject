@@ -15,6 +15,10 @@ body {
     padding-top: 200px
 }
 
+.col-md-10 {
+    padding-top: 200px
+}
+
 h1 {
     color: lightsalmon;
     text-align: center;
