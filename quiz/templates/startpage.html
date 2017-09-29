@@ -1,32 +1,32 @@
 <!doctype html>
 <html lang=sv>
 <canvas id="c"></canvas>
-	<head> 
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width, initial-scale=1">
-		<title>Quiznödig?</title>
-		<link rel="stylesheet" href="/static/css/bootstrap.min.css">
-		<link rel="stylesheet" href="/static/quizstyle.css">
-	</head>
-	<body class = background1>
+<head> 
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width, initial-scale=1">
+	<title>Quiznödig?</title>
+	<link rel="stylesheet" href="/static/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/static/quizstyle.css">
+</head>
+<body class = background1>
 	<div class="container">
 		<div class="row">	
 			<div class="col-md-3"> </div>
 			<div class="col-md-6">
-			<img src="/static/images/apa.gif/">	
-			{% for quiz in quizzes %}
-					<p><a href="{% url 'question_page' 1 1 %}">
-						{{ quiz.name }}
+				<img src="/static/images/apa.gif/">	
+				{% for quiz in quizzes %}
+				<p><a href="{% url 'question_page' 1 1 %}">
+					{{ quiz.name }}
 				</a></p>
-			{% empty %}	
+				{% empty %}	
 				<p><em>Det finns inga frågesporter ännu.</em></p>
-			{% endfor %}	
+				{% endfor %}	
 			</div>
 			<div class="col-md-3"> </div>
-		<script 
-	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
-	</script>
+			<script 
+			src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+		</script>
 		<script src="js/bootstrap.min.js"></script>
 	</body>
 	</html>	
