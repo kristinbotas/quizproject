@@ -9,16 +9,22 @@ body {
          -o-user-select: none;
         -ms-user-select: none;
             user-select: none;
+        }
+
+.col-md-6 {
+    padding-top: 300px
 }
 
 h1 {
-    color: white;
+    color: lightsalmon;
     text-align: center;
+    font-size: 50pt;
 }
 
 p {
-    color: white;
+    color: lightsalmon;
     text-align: center;
+    font-size: 30pt;
 }
 
 canvas {
@@ -35,4 +41,9 @@ canvas {
     color: #eee;
     font-size: 13px;
     background-color: rgba(0, 0, 0, .5);
+}
+
+.background1 { 
+    background: url(/static/images/background2.png/);
+
 }
