@@ -8,7 +8,7 @@
 		<link rel="stylesheet" href="/static/css/bootstrap.min.css">
 		<link rel="stylesheet" href="/static/quizstyle.css">
 	</head>
-	<body>
+	<body class=background1>
 		<h1>{{ question_number }}. {{ question }}</h1>
 		<form action="{% url "answer_page" quiz.quiz_number question_number %}" method="post">
 			{% csrf_token %}

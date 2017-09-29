@@ -13,9 +13,8 @@
 	<div class="container">
 		<div class="row">	
 			<div class="col-md-3"> </div>
-			<div class="col-md-6"> 
+			<div class="col-md-6">
 			<img src="/static/images/apa.gif/">	
-			<ul>
 			{% for quiz in quizzes %}
 					<p><a href="{% url 'quiz_page' quiz.quiz_number %}">
 						{{ quiz.name }}
@@ -23,7 +22,7 @@
 			{% empty %}	
 				<p><em>Det finns inga frågesporter ännu.</em></p>
 			{% endfor %}	
-			</ul>	</div>
+			</div>
 			<div class="col-md-3"> </div>
 		<script 
 	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
